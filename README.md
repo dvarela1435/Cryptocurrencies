@@ -8,10 +8,7 @@ The purpose of the analysis is to process data from CryptoCompare and fit it int
 The data file had 1252 rows
 
 - 1144 rows were tradeable, however,
-
-- 459 rows had NaN values under Total Coins Mine Column
-
-- 153 rows did not have Coins Mined
+- 459 rows had NaN values and 153 rows were 0 for Total Coins Mine Column
 
 This would leave 532 tradeable cryptocurrencies to work with.
 
@@ -21,7 +18,7 @@ the explained variance ratio is :
 
 	
 |    Pc 1    |    PC 2    |    PC 3    |
-|            | -          | -          | 
+|     -      | -          | -          | 
 | 0.02792992 | 0.02140785 | 0.02050050 |
 
 To locate the number of clusters to initialize the K-Means model, the elbow method was used
